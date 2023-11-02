@@ -184,7 +184,7 @@ for TARGET in $TARGETS; do
     case $TARGET in
         (iPhoneOS)
             ARCH=arm
-            MARCHS="armv7 armv7s arm64"
+            MARCHS="arm64"
             EXTRA_FLAGS="$BITCODE_FLAGS -miphoneos-version-min=$SDK_IOS_MIN_VERSION"
             TARGET_SUFFIX=""
             ;;
