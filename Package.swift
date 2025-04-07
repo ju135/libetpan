@@ -15,7 +15,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "libetpan",
-                dependencies: ["libsasl"],
                 path: ".",
                 exclude: ["src/windows",
                           "src/bsd"],
