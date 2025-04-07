@@ -58,7 +58,7 @@ let package = Package(
                     .define("HAVE_ZLIB"),
                     .define("LIBETPAN_REENTRANT"),
                     .define("PACKAGE", to: "libetpan"),
-                    .define("USE_SASL", .when(platforms: [.macOS]))
+                    .define("USE_SASL", to: "1")
                 ],
                 linkerSettings: [
                     .linkedLibrary("iconv"),
