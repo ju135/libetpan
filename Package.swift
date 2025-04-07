@@ -15,6 +15,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "libetpan",
+                dependencies: ["libsasl"],
                 path: ".",
                 exclude: ["src/windows",
                           "src/bsd"],
@@ -36,6 +37,7 @@ let package = Package(
                     .headerSearchPath("src/driver/implementation"),
                     .headerSearchPath("src/driver/interface"),
                     .headerSearchPath("src/driver/tools"),
+                    .headerSearchPath("libraries/libsasl2.xcframework/ios-arm64/Headers/sasl"),
                     .define("HAVE_LIMITS_H"),
                     .define("HAVE_UNISTD_H"),
                     .define("HAVE_SYS_MMAN_H"),
