@@ -63,7 +63,7 @@ let package = Package(
                 linkerSettings: [
                     .linkedLibrary("iconv"),
                     .linkedLibrary("z"),
-                    .linkedLibrary("sasl2", .when(platforms: [.macOS])),
+                    .linkedLibrary("sasl2"),
                     .linkedLibrary("c")
                 ]),
         
