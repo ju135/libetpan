@@ -69,7 +69,7 @@ let package = Package(
                 ]),
         .binaryTarget(
             name: "libsasl",
-            path: "libraries/libsasl2.a"
+            path: "libraries/libsasl2.xcframework"
         ),
         
     ],
